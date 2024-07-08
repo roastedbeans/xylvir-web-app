@@ -5,7 +5,7 @@ import NavbarItems from './NavbarItems';
 
 const Navbar = () => {
 	return (
-		<div className='bg-custom-black-800 h-16 w-full font-openSans'>
+		<div className='bg-custom-black-800 h-16 w-full font-openSans fixed z-[999]'>
 			<div className='flex max-w-7xl w-full h-16 items-center justify-between mx-auto px-4'>
 				<div className='max-w-[17rem] w-full'>
 					<X

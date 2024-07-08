@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, Open_Sans } from 'next/font/google';
-import './globals.css';
+import '../globals.css';
+import Navbar from '../components/UI/Navbar';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -23,7 +24,15 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={`${inter.className} ${openSans.variable}`}>{children}</body>
+			<body className={`${inter.className} ${openSans.variable}`}>
+				<div className='bg-custom-black-800'>
+					<div className='pb-16'>
+						<Navbar />
+					</div>
+
+					{children}
+				</div>
+			</body>
 		</html>
 	);
 }

@@ -3,20 +3,31 @@ import React from 'react';
 import Circle from '@/public/story.png';
 const LeftOne = () => {
 	return (
-		<div className='bg-gray-700 w-1/2 h-96 rounded-xl text-custom-white-100 flex p-10 items-end justify-center relative'>
-            <div className='absolute h-fit z-0 top-8 left-8'>
-				<Image
-					src={Circle}
-					alt={'multiple circles'}
-					width={100}
-					height={100}
-					style={{ objectFit: 'contain' }}
-				/>
+		<div className='bg-[#2C2D32] w-1/2 h-[40rem] rounded-xl text-custom-white-100 flex flex-col p-10 items-start justify-between relative'>
+			<div>
+				<div className='h-fit z-0 top-8 left-8'>
+					<Image
+						src={Circle}
+						alt={'multiple circles'}
+						className='invert'
+						width={100}
+						height={100}
+						style={{ objectFit: 'contain' }}
+					/>
+				</div>
+				<h1 className='font-normal text-4xl w-full'>
+					Tools for creators,<br></br> brands, and agents to<br></br> monetize their IP <br></br>portfolio using{' '}
+					<span className='text-blue-700'>
+						smart<br></br> licenses*
+					</span>
+				</h1>
 			</div>
-			<div className='absolute h-fit z-0'>
-			</div>
-			<div className='w-full flex place-items-center h-fit z-10'>
-				<h1 className='font-normal text-4xl w-full'>Tools for creators,<br></br> brands, and agents to<br></br> monetize their IP <br></br>portfolio using <span className='text-blue-950'>smart<br></br> licenses*</span></h1>
+			<div className='space-y-6'>
+				<p>*smart license \ smart lisns \ noun</p>
+				<p>
+					A new standard for IP licensing pioneered by spaceport that combines legally enforceable PDF agreements with
+					digitally verifiable authenticity and transparency
+				</p>
 			</div>
 		</div>
 	);
