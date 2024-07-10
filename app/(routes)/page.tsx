@@ -19,6 +19,7 @@ export default function Home() {
 						<RightOne />
 					</div>
 				</div>
+				<RightOne />
 			</div>
 		</main>
 	);
