@@ -6,14 +6,8 @@ import NavbarItems from './NavbarItems';
 const Navbar = () => {
 	return (
 		<div className='bg-custom-black-800 h-16 w-full font-openSans fixed z-[999]'>
-			<div className='flex max-w-7xl w-full h-16 items-center justify-between mx-auto px-4'>
-				<div className='max-w-[17rem] w-full'>
-					<X
-						size={48}
-						className='text-white font-extrabold'
-					/>
-				</div>
-				<h1 className='font-semibold text-2xl text-white uppercase'>Xylvir Group</h1>
+			<div className='flex max-w-7xl w-full h-16 items-center justify-between mx-auto md:px-10 px-4'>
+				<h1 className='font-semibold text-2xl text-white uppercase'>What&apos;s Next?</h1>
 				<NavbarItems />
 			</div>
 		</div>
