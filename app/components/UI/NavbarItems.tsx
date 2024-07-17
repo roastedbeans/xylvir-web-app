@@ -21,6 +21,11 @@ const navItems = [
 		value: 'register',
 		url: '/register',
 	},
+	{
+		label: 'Anime',
+		value: 'anime',
+		url: '/anime',
+	}
 ];
 
 const NavbarItems = () => {
